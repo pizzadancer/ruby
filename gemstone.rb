@@ -55,7 +55,7 @@ puts "We will now add that to your shopping cart."
 # Make a price list/hashtable and keep tab of how much money youre going to spend on gems
 cart = []
 cart << gemstone
-
+puts "testing branches"
 
 # gemstone = gets   
 # puts "So you like #{gemstone}"
