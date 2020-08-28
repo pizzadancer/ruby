@@ -7,8 +7,21 @@ color_toGemstone = {
   "blue" => "sapphire",
   "red" => "garnet", 
   "white" => "diamond",
-  "orange" => "topaz"
+  "orange" => "topaz",
+  "green" => "emerald",
+  "yellow" => "citrine",
+  "purple" => "amethyst"
 } 
+
+gem_prices = {
+  "sapphire" =>1000,
+  "garnet" => 30, 
+  "diamond" => 2400,
+  "topaz" => 250,
+  "emerald" => 4000,
+  "citrine" => 10,
+  "amethyst" => 20 
+}
 
 # Takes in the gemstone string and launches a webpage about that gemstone using Launchy
 def launch_me(string)
@@ -16,7 +29,10 @@ def launch_me(string)
     "garnet" => "https://en.wikipedia.org/wiki/Garnet",
     "sapphire" => "https://en.wikipedia.org/wiki/Sapphire",
     "topaz" => "https://en.wikipedia.org/wiki/Topaz",
-    "diamond" => "https://en.wikipedia.org/wiki/Diamond"
+    "diamond" => "https://en.wikipedia.org/wiki/Diamond",
+    "emerald" => "https://en.wikipedia.org/wiki/Emerald",
+    "citrine" => "https://en.wikipedia.org/wiki/Quartz#Citrine",
+    "amethyst" => "https://en.wikipedia.org/wiki/Amethyst"
   }
 
   Launchy.open(addresses[string])  
@@ -55,7 +71,8 @@ puts "We will now add that to your shopping cart."
 # Make a price list/hashtable and keep tab of how much money youre going to spend on gems
 cart = []
 cart << gemstone
-puts "lets try this again"
+print cart
+# puts "lets try this again"
 
 # gemstone = gets   
 # puts "So you like #{gemstone}"
