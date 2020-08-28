@@ -56,23 +56,54 @@ puts <<-INTRO
   You point to your favorite color. 
 
 INTRO
+
 print "> "
-# fav_color = gets.chomp.downcase
 fav_color = gets.chomp.capitalize #test
-# puts "You pick #{fav_color.capitalize} as your favorite color."
-puts "You pick #{fav_color} as your favorite color." #test
 gemstone = color_toGemstone[fav_color.downcase]
-# puts "You will like #{color_toGemstone[fav_color].capitalize}."
+
+puts "You pick #{fav_color} as your favorite color." #test
 puts "You will like #{gemstone.capitalize}." #test
-# puts fav_color
-# launch_me(color_toGemstone[fav_color])
-launch_me(gemstone) #test
-puts "We will now add that to your shopping cart."
+# launch_me(gemstone) #test
+puts 
+
+puts "Ah yes, beautiful choice. Let me place that into your cart\n"
 # Make a price list/hashtable and keep tab of how much money youre going to spend on gems
 cart = []
 cart << gemstone
-print cart
-# puts "lets try this again"
+
+puts "Would you like any others? Here is a list: \n"
+color_toGemstone.each do |key, value|
+  print "#{value}, " #Bob's #{key} is 
+end
+puts 
+print "> "
+gem_choice = gets.chomp
+# launch_me(gem_choice)
+
+puts "Is #{gem_choice.capitalize} what you wanted? (y / n) ?"
+print "> "
+want = gets.chomp
+if want
+  cart << gem_choice
+end
+
+# need to interate through the cart and save the value of the cart item 
+# then after we add up all the values
+total = 0.0
+# item_value = 0
+i = 0 
+while i < cart.length
+  # puts i
+  # puts cart[i]
+  total += gem_prices[cart[i]]
+  i += 1 
+end
+
+puts "Your total shopping experience at the Royal Gemetisserie is $#{total} dollars."
+puts "You walk out with your high end bag, somewhat dumbfounded that you parted with so much money..."
+puts "but...SHINY"
+puts "END"
+
 
 # gemstone = gets   
 # puts "So you like #{gemstone}"
