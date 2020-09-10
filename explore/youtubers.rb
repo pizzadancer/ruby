@@ -1,12 +1,14 @@
 ### REQUIREMENTS ##
-#
+
 $stdout.sync = true
 require 'active_support/inflector'
-#
-### end ###
+
+########
+
+
 
 ### VARIABLES & DEFINITIONS ###
-#
+
 youtubers = ["nakeyjakey", "kurzgesagt", "thesilentwatcher", "teamfourstar", "chillhop"]
 
 
@@ -23,13 +25,13 @@ def youtube_adder(youtubers)
     end
   end  
 end
-#
-### end ###
+
+########
 
 
 
 ### START: USER INPUT ###
-#
+
 puts "These are your favorite Youtubers so far!"
 print youtubers
 puts
@@ -46,17 +48,17 @@ if answr == "yes"
 else
   puts "Okay, we'll stay with the this."
 end
-#
-### end ###
+
+########
 
 
 
 ### USER OUTPUT ###
-#
+
 puts "Here is your list of favorited youtubers!"
 print youtubers.map(&:titleize)
-#
-### end ###
+
+########
 
 
 
