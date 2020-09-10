@@ -35,6 +35,90 @@ end
 
 
 
+print youtubers
+puts
+
+youtubers.push("teamfourstar")
+print youtubers
+puts
+
+youtubers.push("chillhop")
+print youtubers
+puts
+
+
+more = true
+
+print youtubers
+puts
+
+youtubers.push("teamfourstar")
+print youtubers
+puts
+
+youtubers.push("chillhop")
+print youtubers
+puts
+
+
+more = true
+
+print youtubers
+puts
+
+youtubers.push("teamfourstar")
+print youtubers
+puts
+
+youtubers.push("chillhop")
+print youtubers
+puts
+
+
+more = true
+
+print youtubers
+puts
+
+youtubers.push("teamfourstar")
+print youtubers
+puts
+
+youtubers.push("chillhop")
+print youtubers
+puts
+
+
+more = true
+
+print youtubers
+puts
+
+youtubers.push("teamfourstar")
+print youtubers
+puts
+
+youtubers.push("chillhop")
+print youtubers
+puts
+
+
+more = true
+
+print youtubers
+puts
+
+youtubers.push("teamfourstar")
+print youtubers
+puts
+
+youtubers.push("chillhop")
+print youtubers
+puts
+
+
+more = true
+
 
 
 
